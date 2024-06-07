@@ -1,9 +1,10 @@
+import Padding from "@/components/padding";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-white h-full w-full text-black">
-      hello my name is anas
+   <Padding>hello my name is anas </Padding>   
     </div>
   );
 }
