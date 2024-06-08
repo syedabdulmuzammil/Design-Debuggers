@@ -12,6 +12,7 @@ import Fifthcompo from "./fifthcompo";
 import Sixcomp from "./sixcomp";
 import Faqs from "./faqs";
 import Personal from "./personal";
+import Info from "./info";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
