@@ -7,6 +7,8 @@ import { db } from "@/app/firebase";
 import Hero from "./hero";
 import Secondcomp from "./secondcomp";
 import Thirdcomp from "./thirdcomp";
+import Fourthcomp from "./fourthcomp";
+import Fifthcompo from "./fifthcompo";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -26,6 +28,8 @@ const Homewrapper = () => {
       <div className=" h-[20vh] bg-black "></div>
       <Secondcomp />
       <Thirdcomp />
+      <Fourthcomp />
+      <Fifthcompo />
     </div>
   );
 };
