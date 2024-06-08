@@ -11,6 +11,7 @@ import Fourthcomp from "./fourthcomp";
 import Fifthcompo from "./fifthcompo";
 import Sixcomp from "./sixcomp";
 import Faqs from "./faqs";
+import Personal from "./personal";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -33,6 +34,7 @@ const Homewrapper = () => {
       <Fourthcomp />
       <Fifthcompo />
       <Sixcomp />
+      <Personal />
     </div>
   );
 };
