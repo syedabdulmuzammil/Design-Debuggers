@@ -4,6 +4,7 @@ import Image from "next/image";
 import { collection, addDoc, getDoc, QuerySnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "@/app/firebase";
+import Hero from "./hero";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -17,7 +18,11 @@ const Homewrapper = () => {
       setNewItems({ name: "", price: "" });
     }
   };
-  return <div></div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default Homewrapper;
