@@ -13,6 +13,7 @@ import Sixcomp from "./sixcomp";
 import Faqs from "./faqs";
 import Personal from "./personal";
 import Info from "./info";
+import Assesments from "./assesments";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -27,7 +28,7 @@ const Homewrapper = () => {
     }
   };
   return (
-    <div className="px-12">
+    <div className="">
       <Hero />
       <div className=" h-[20vh] bg-black "></div>
       <Secondcomp />
@@ -35,6 +36,7 @@ const Homewrapper = () => {
       <Fourthcomp />
       <Fifthcompo />
       <Sixcomp />
+      <Assesments/>
     </div>
   );
 };

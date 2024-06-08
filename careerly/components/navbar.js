@@ -9,12 +9,16 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const path = usePathname();
   const path1 = usePathname();
+  
+  
 
   return (
     <Padding
       className={` fixed bg-black top-0 left-0 w-full z-[999] ${
         path1.includes("dashboard") ? "hidden" : "flex"
-      } `}
+      }   ${
+        path1.includes("videochat") ? "hidden" : "flex"
+      }   `}
     >
       <div className=" min-w-full rounded-full bg-black  flex items-center justify-between px-5 py-5 ">
         <motion.div
