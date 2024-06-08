@@ -4,7 +4,6 @@ import Image from "next/image";
 import { collection, addDoc, getDoc, QuerySnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "./firebase";
-import { fetchItems } from "@/api/fetchItems";
 
 export default function Home() {
   const addItem = async (e) => {
