@@ -9,6 +9,7 @@ import Secondcomp from "./secondcomp";
 import Thirdcomp from "./thirdcomp";
 import Fourthcomp from "./fourthcomp";
 import Fifthcompo from "./fifthcompo";
+import Sixcomp from "./sixcomp";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -30,6 +31,7 @@ const Homewrapper = () => {
       <Thirdcomp />
       <Fourthcomp />
       <Fifthcompo />
+      <Sixcomp />
     </div>
   );
 };

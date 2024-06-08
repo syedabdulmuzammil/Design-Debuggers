@@ -4,8 +4,8 @@ const Get = () => {
   return (
     <div>
       <svg
-        width="851"
-        height="165"
+        width="800"
+        height="150"
         viewBox="0 0 851 165"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

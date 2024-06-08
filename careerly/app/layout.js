@@ -2,6 +2,8 @@ import "./globals.css";
 import "@/public/fonts/Space/stylesheet.css";
 import "@/public/fonts/overused/stylesheet.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Lenis1 from "@/components/lenis1";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=" pt-[6rem] w-full relative bg-black">
         <Navbar />
-        {children}
+        <Lenis1>{children}</Lenis1>
+        <Footer />
       </body>
     </html>
   );

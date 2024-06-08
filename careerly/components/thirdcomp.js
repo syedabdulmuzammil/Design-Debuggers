@@ -48,7 +48,7 @@ const Thirdcomp = () => {
             <Get />
           </div>
         </Padding>
-        <div className=" flex flex-col gap-12 py-36 over ">
+        <div className=" flex flex-col gap-24 py-36 over ">
           <Marquee
             className="over"
             gradient={true}
