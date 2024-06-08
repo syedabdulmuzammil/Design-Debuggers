@@ -7,9 +7,13 @@ import Get from "@/public/icons/get";
 import Marquee from "react-fast-marquee";
 import Whitedot from "@/public/icons/whitedot";
 
-const Thirdcomp = () => {
+const Thirdcomp = ({ hidden = false }) => {
   return (
-    <div className=" bg-[#171717] w-full py-[5rem] ">
+    <div
+      className={`  w-full py-[5rem] ${
+        hidden ? "bg-[#000000]" : "bg-[#171717]"
+      } `}
+    >
       <div className="w-full flex flex-col">
         <Padding className={" w-full flex items-center gap-3"}>
           <div className=" w-[45%] flex flex-col gap-3 ">
@@ -48,7 +52,11 @@ const Thirdcomp = () => {
             <Get />
           </div>
         </Padding>
-        <div className=" flex flex-col gap-24 py-36 over ">
+        <div
+          className={` flex flex-col gap-24 py-36 over ${
+            hidden ? "hidden" : "flex"
+          } `}
+        >
           <Marquee
             className="over"
             gradient={true}

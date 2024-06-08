@@ -3,6 +3,8 @@ import React from "react";
 import Padding from "./padding";
 import Image from "next/image";
 import { easeInOut, motion, useMotionValue } from "framer-motion";
+import Her from "@/public/icons/her";
+import Scroll from "@/public/icons/scroll";
 
 const Hero = () => {
   const x = useMotionValue(0);
@@ -63,6 +65,14 @@ const Hero = () => {
                 with Careerly
               </div>
             </motion.div>
+          </div>
+          <div className=" flex flex-col gap-8 pt-32 w-full items-center justify-center ">
+            <div className="  ">
+              <Her />
+            </div>
+            <div>
+              <Scroll />
+            </div>
           </div>
         </div>
       </Padding>
