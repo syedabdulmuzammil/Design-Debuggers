@@ -5,3 +5,7 @@
 html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none;
 }
+
+.over::-webkit-scrollbar{
+    display: none;
+}

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { db } from "@/app/firebase";
 import Hero from "./hero";
 import Secondcomp from "./secondcomp";
+import Thirdcomp from "./thirdcomp";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -22,7 +23,9 @@ const Homewrapper = () => {
   return (
     <div>
       <Hero />
+      <div className=" h-[20vh] bg-black "></div>
       <Secondcomp />
+      <Thirdcomp />
     </div>
   );
 };

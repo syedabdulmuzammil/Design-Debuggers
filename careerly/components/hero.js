@@ -18,7 +18,7 @@ const Hero = () => {
   };
   return (
     <div
-      className="bg-black h-[100vh] w-full flex items-center justify-center relative
+      className="bg-black h-[90vh] w-full flex items-center justify-center relative
     "
       onMouseMove={handleMouseMove}
     >
@@ -36,6 +36,7 @@ const Hero = () => {
                 duration: 0.66,
                 ease: easeInOut,
               }}
+              className=" leading-none "
             >
               Unlock Your Dream
             </motion.div>
@@ -54,10 +55,10 @@ const Hero = () => {
                 ease: easeInOut,
               }}
             >
-              <div className="bg-[#FF8A66] font-medium font-overused  leading-none w-fit h-fit text-[59px] px-[23px] py-[11px] rounded-full text-black ">
+              <div className="bg-[#FF8A66] font-medium font-overused  leading-none w-fit h-fit text-[59px] px-[23px] pb-[11px] rounded-full text-black ">
                 Career
               </div>
-              <div className="text-[85px] font-medium text-[#AEAEAE] font-space ">
+              <div className="text-[80px] font-medium text-[#AEAEAE] font-space ">
                 {" "}
                 with Careerly
               </div>
