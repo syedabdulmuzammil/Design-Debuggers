@@ -5,6 +5,7 @@ import { collection, addDoc, getDoc, QuerySnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "@/app/firebase";
 import Hero from "./hero";
+import Secondcomp from "./secondcomp";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
@@ -21,6 +22,7 @@ const Homewrapper = () => {
   return (
     <div>
       <Hero />
+      <Secondcomp />
     </div>
   );
 };
