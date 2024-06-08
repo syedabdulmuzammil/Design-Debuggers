@@ -9,3 +9,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .over::-webkit-scrollbar{
     display: none;
 }
+
+.login::placeholder{
+    font-family: "Space Grotesk" ;
+    color: #C5C5C5;
+}
