@@ -1,25 +1,27 @@
+"use client";
 import Padding from "@/components/padding";
 import Image from "next/image";
-import { collection, addDoc } from "firebase/firestore";
-import { useState } from "react";
+import { collection, addDoc, getDoc, QuerySnapshot } from "firebase/firestore";
+import { useEffect, useState } from "react";
+import { db } from "./firebase";
+import { fetchItems } from "@/api/fetchItems";
 
 export default function Home() {
-  //add items to data base
   const addItem = async (e) => {
     e.preventDefault();
+    if (newItem.name !== "" && newItem.price !== "") {
+      // setItems([...items, newItem]);
+      await addDoc(collection(db, "items"), {
+        name: newItem.name.trim(),
+        price: newItem.price.trim(),
+      });
+      setNewItems({ name: "", price: "" });
+    }
   };
 
-  const [newItem, setNewItems] = useState({ name: "", price: "" });
-
-  //Read items form data base
-
-  //delete items for database
   return (
     <div className="bg-white h-full w-full relative text-black">
-      <Padding>
-        <input value={newItem.name} placeholder="Enter Text" onChange={e} />
-        <input value={newItem.price} placeholder="Enter Price" />
-      </Padding>
+      <Padding>hello</Padding>
     </div>
   );
 }
