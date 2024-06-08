@@ -1,10 +1,18 @@
+"use client"
 import React from "react";
 import Padding from "./padding";
 import Careerlyfooter from "@/public/icons/careerlyfooter";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const path = usePathname();
+  const path1 = usePathname();
   return (
-    <div className=" pt-12 pb-4  md:pt-6 bg-white w-full ">
+    <div className={` pt-12 pb-4  md:pt-6 bg-white w-full ${
+            path.includes("login") ? "hidden" : ""
+          } ${
+            path1.includes("signup") ? "hidden" : ""
+    }  `}>
       <Padding className={" py-10"}>
         <div className=" lg:flex gap-10 lg:gap-20 xl:gap-28 ">
           <div className=" lg:w-[30%] md:flex lg:flex-col items-start justify-between min-h-full ">

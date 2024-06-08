@@ -10,6 +10,7 @@ import Thirdcomp from "./thirdcomp";
 import Fourthcomp from "./fourthcomp";
 import Fifthcompo from "./fifthcompo";
 import Sixcomp from "./sixcomp";
+import Faqs from "./faqs";
 
 const Homewrapper = () => {
   const addItem = async (e) => {
