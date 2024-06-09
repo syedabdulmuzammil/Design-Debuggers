@@ -2,6 +2,7 @@ import React from "react";
 import Padding from "./padding";
 import Stars from "@/public/icons/stars";
 import Card2 from "./card2";
+import Link from "next/link";
 
 const Personal = () => {
   return (
@@ -16,26 +17,38 @@ const Personal = () => {
             Recommendation based on CSE
           </div>
           <div className="flex gap-[48px] py-10">
-            <Card2
-              img={"/images/Rectangle 18585.png"}
-              name={"Artificial Intelligence (AI)"}
-              rating={<Stars />}
-            ></Card2>
-            <Card2
-              img={"/images/robo.png"}
-              name={"Machine Learning (ML)"}
-              rating={<Stars />}
-            ></Card2>
-            <Card2
-              img={"/images/network.png"}
-              name={"Internet of Things (IoT)"}
-              rating={<Stars />}
-            ></Card2>
-            <Card2
-              img={"/images/laptop.png"}
-              name={"Software Engineerin"}
-              rating={<Stars />}
-            ></Card2>
+            <Link href={"/dashboard/singlesubject"}>
+              {" "}
+              <Card2
+                img={"/images/Rectangle 18585.png"}
+                name={"Artificial Intelligence (AI)"}
+                rating={<Stars />}
+              ></Card2>
+            </Link>
+            <Link href={"/dashboard/singlesubject"}>
+              {" "}
+              <Card2
+                img={"/images/robo.png"}
+                name={"Machine Learning (ML)"}
+                rating={<Stars />}
+              ></Card2>
+            </Link>
+            <Link href={"/dashboard/singlesubject"}>
+              {" "}
+              <Card2
+                img={"/images/network.png"}
+                name={"Internet of Things (IoT)"}
+                rating={<Stars />}
+              ></Card2>
+            </Link>
+            <Link href={"/dashboard/singlesubject"}>
+              {" "}
+              <Card2
+                img={"/images/laptop.png"}
+                name={"Software Engineerin"}
+                rating={<Stars />}
+              ></Card2>
+            </Link>
           </div>
         </div>
         <div>
