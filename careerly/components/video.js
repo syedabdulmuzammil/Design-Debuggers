@@ -10,10 +10,10 @@ const Video = () => {
   return (
     <div className="text-white">
       <Padding>
-        <Logo />
+      <div className="py-6">  <Logo /></div>
         <div className=" flex ">
           <div>
-            <div className="relative pt-8">
+            <div className="relative ">
               <div className="w-[1012px] h-[783px] ">
                 <Image
                   height={500}
