@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 
 const Topics = () => {
   const [activeTab, setActiveTab] = useState(1);
-  const [activeTab1, setActiveTab1] = useState(0);
+  const [activeTab1, setActiveTab1] = useState(-1);
   const changeTab = (tabNumber) => {
     setActiveTab(tabNumber);
+    setActiveTab1(-1);
   };
 
   const engineering = [
@@ -30,14 +31,15 @@ const Topics = () => {
     "Marketing",
     "Management",
     "Entrepreneurship",
-    "Business Analytics",
+    "Analytics",
   ];
-  const meedia = [
+  const media = [
     "Journalism",
     "Public Relations",
     "Advertising",
     "Digital Media",
-    "Film and Television",
+    "Film",
+    " Television",
   ];
 
   return (
@@ -48,7 +50,7 @@ const Topics = () => {
             Personal Interests
           </div>
           <div className="w-full border-[1px] border-[#333333] "></div>
-          <div className=" w-full flex flex-col px-6 pt-4 gap-8  ">
+          <div className=" w-full flex flex-col px-6 pt-4 gap-12  ">
             <div className=" font-space font-medium text-white text-[26px]  ">
               What topic or subjects do you Enjoy reading or learning about
             </div>
@@ -125,6 +127,77 @@ const Topics = () => {
                 )}
                 <div className=" flex gap-1 items-center">
                   <div className="  ">Media and Communication</div>
+                </div>
+              </div>
+            </div>
+            <div className=" flex items-center gap-6 ">
+              {activeTab == 1 &&
+                engineering.map((item, index) => (
+                  <div
+                    className={` h-[56px] w-[128px] rounded-[10px] text-[16px] font-medium font-overused text-[white] ${
+                      activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
+                    } border-[1px] border-[#333333] flex items-center justify-center  `}
+                    onClick={() => {
+                      setActiveTab1(index);
+                    }}
+                  >
+                    {item}
+                  </div>
+                ))}
+              {activeTab == 2 &&
+                arts.map((item, index) => (
+                  <div
+                    className={` h-[56px] w-[128px] rounded-[10px] text-[16px] font-medium font-overused text-[white] ${
+                      activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
+                    } border-[1px] border-[#333333] flex items-center justify-center  `}
+                    onClick={() => {
+                      setActiveTab1(index);
+                    }}
+                  >
+                    {item}
+                  </div>
+                ))}
+              {activeTab == 3 &&
+                business.map((item, index) => (
+                  <div
+                    className={` h-[56px] w-[128px] rounded-[10px] text-[16px] font-medium font-overused text-[white] ${
+                      activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
+                    } border-[1px] border-[#333333] flex items-center justify-center  `}
+                    onClick={() => {
+                      setActiveTab1(index);
+                    }}
+                  >
+                    {item}
+                  </div>
+                ))}
+              {activeTab == 4 &&
+                media.map((item, index) => (
+                  <div
+                    className={` h-[56px] w-[128px] rounded-[10px] text-[16px] font-medium font-overused text-[white] ${
+                      activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
+                    } border-[1px] border-[#333333] flex items-center justify-center  `}
+                    onClick={() => {
+                      setActiveTab1(index);
+                    }}
+                  >
+                    {item}
+                  </div>
+                ))}
+            </div>
+            <div className=" w-full flex items-center justify-between h-[40px] py-6 rounded-3xl bg-[#333333] px-4 border-[1px] border-[#444444] ">
+              <div className=" flex items-center  gap-2 ">
+                <div className=" font-overused text-white text-[15px] pr-8  ">
+                  Progress
+                </div>
+                <div className=" h-[5px] w-[45px] rounded-2xl bg-[#6D6D6D] "></div>
+                <div className=" h-[5px] w-[45px] rounded-2xl bg-[#8B66FE] "></div>
+              </div>
+              <div className=" flex items-center gap-4  ">
+                <div className=" text-[#FAFBFD] text-[16px] font-overused  h-full px-8 py-2 rounded-full cursor-pointer   ">
+                  Previous
+                </div>
+                <div className=" text-[#FAFBFD] text-[16px] font-overused bg-[#8B66FE] h-full px-8 py-2 rounded-full cursor-pointer   ">
+                  Next
                 </div>
               </div>
             </div>
