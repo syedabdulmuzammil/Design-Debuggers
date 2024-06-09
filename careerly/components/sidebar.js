@@ -32,7 +32,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Dashboard activeIndex={activeIndex} /> */}</div>
-            <div>Dashboard</div>
+            <div className="font-space ">Dashboard</div>
           </div>
           <div
             onClick={() => setActiveIndex(1)}
@@ -44,7 +44,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Mycollege activeIndex={activeIndex} /> */}</div>
-            <div>My College</div>
+            <div className="font-space ">Educational details</div>
           </div>
           <div
             onClick={() => setActiveIndex(2)}
@@ -56,7 +56,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Placement activeIndex={activeIndex} /> */}</div>
-            <div>Placements Hub</div>
+            <div className="font-space">Personal Intrests</div>
           </div>
           <div
             onClick={() => setActiveIndex(3)}
@@ -68,7 +68,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Message activeIndex={activeIndex} /> */}</div>
-            <div>Messages</div>
+            <div className="font-space">Recommendation</div>
           </div>
 
           <div
@@ -81,7 +81,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Student activeIndex={activeIndex} /> */}</div>
-            <div>Manage Students</div>
+            <div className="font">Career Assessments </div>
           </div>
           <div
             onClick={() => setActiveIndex(5)}
@@ -93,7 +93,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Test activeIndex={activeIndex} /> */}</div>
-            <div>Tests</div>
+            <div className="font-space">Mentors</div>
           </div>
           <div
             onClick={() => setActiveIndex(6)}
@@ -105,7 +105,7 @@ const Sidebar = () => {
             )}
           >
             <div>{/* <Report activeIndex={activeIndex} /> */}</div>
-            <div>Reports</div>
+            <div className="font-space">Messages</div>
           </div>
         </div>
       </div>

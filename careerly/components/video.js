@@ -10,7 +10,10 @@ const Video = () => {
   return (
     <div className="text-white">
       <Padding>
-      <div className="py-6">  <Logo /></div>
+        <div className="py-6">
+          {" "}
+          <Logo />
+        </div>
         <div className=" flex ">
           <div>
             <div className="relative ">
@@ -70,7 +73,9 @@ const Video = () => {
               </div>
             </div>
             <div className="flex justify-between px-5  w-[374px] h-[60px] items-center rounded-[57px] border-[#444444] bg-[#333333]  ">
-              <div className="text-[#B3B3B3] font-space text-[16px]">Send a message</div>
+              <div className="text-[#B3B3B3] font-space text-[16px]">
+                Send a message
+              </div>
               <div>
                 <Message />
               </div>
