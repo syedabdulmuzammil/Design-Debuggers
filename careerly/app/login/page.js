@@ -1,12 +1,49 @@
+"use client";
 import Padding from "@/components/padding";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const router = useRouter();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Dummy user data (replace with your own)
+    const dummyUsers = [
+      { username: "user1@gmail.com", password: "password1" },
+      { username: "user2@gmail.com", password: "password2" },
+      // Add more dummy users as needed
+    ];
+
+    // Find user in dummy data
+    const user = dummyUsers.find(
+      (user) => user.username === username && user.password === password
+    );
+
+    // Display login result message
+    if (user) {
+      setMessage(true);
+    } else {
+      setMessage(false);
+    }
+    if (message) {
+      router.push("/dashboard");
+    }
+  };
+
+  useEffect(() => {
+    console.log(message, "mes");
+  }, [message]);
+
   return (
     <>
-      <div className="font-Matter relative text-[#4E4E4E]  font-medium w-full py-20 min-h-[90svh] md:flex md:items-center ">
+      <div className="font-Matter relative text-[#4E4E4E]  font-medium w-full py-20 min-h-[90svh] md:flex md:items-center pt-24 ">
         <Padding className={"w-full"}>
           <div className=" text-[24px] font-medium text-white text-center pb-8 font-space ">
             Login
@@ -17,8 +54,10 @@ const Page = () => {
             </div>
             <input
               type="text"
-              className=" login  bg-[#191919]  w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
+              className=" login  bg-[#191919]  w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal text-[#c5c5c5]  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
               placeholder="Enter your Email"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className=" pt-6 flex  flex-col w-full justify-center items-center">
@@ -28,14 +67,20 @@ const Page = () => {
             </div>
             <input
               type="text"
-              className=" login  bg-[#191919] w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
+              className=" login  bg-[#191919] w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal text-[#c5c5c5]  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
               placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="flex justify-center">
-            <div className=" w-[23rem] font-space bg-[#6E40FF]  text-[#ffffff] text-[14px] font-medium text-center py-4 md:py-3 mt-8 rounded-full ">
+            <button
+              type="submit"
+              className=" w-[23rem] font-space bg-[#6E40FF]  text-[#ffffff] text-[14px] font-medium text-center py-4 md:py-3 mt-8 rounded-full "
+              onClick={handleSubmit}
+            >
               Login
-            </div>
+            </button>
           </div>
           <div className=" flex gap-2 pt-6 w-max mx-auto ">
             <div className=" text-[#B1B1B1] font-space font-medium text-[16px] ">
@@ -49,9 +94,7 @@ const Page = () => {
           </div>
         </Padding>
       </div>
-      {/* <div className=" absolute bottom-0 w-max left-0">
-        <Image src={src} />
-      </div> */}
+      {message && <div>{message}</div>}
     </>
   );
 };

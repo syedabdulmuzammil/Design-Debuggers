@@ -20,7 +20,7 @@ const Card = ({ heading, bg, textcolor, para, subhead, at }) => {
         </div>
         <div
           className={clsx(
-            " font-overused text-[28px] font-medium leading-[1.8rem]  ",
+            " font-overused text-[42px] font-medium leading-[2.6rem]  ",
             textcolor
           )}
         >

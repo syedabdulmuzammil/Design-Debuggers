@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Assessment = () => {
@@ -132,7 +133,7 @@ const Assessment = () => {
                 <div className=" grid grid-cols-2 gap-x-24 gap-y-12 ">
                   {item.options.map((items, index) => (
                     <div
-                      className={`  px-[52px] py-[20px] rounded-[10px] text-[16px] font-medium font-overused text-[white] ${
+                      className={`  px-[52px] py-[20px] rounded-3xl text-[16px] font-medium font-overused text-[white] ${
                         activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
                       } border-[1px] border-[#333333] flex items-center justify-center  `}
                       onClick={() => {
@@ -163,12 +164,24 @@ const Assessment = () => {
                   >
                     Previous
                   </div>
-                  <div
-                    className=" text-[#FAFBFD] text-[16px] font-overused bg-[#8B66FE] h-full px-8 py-2 rounded-full cursor-pointer   "
-                    onClick={changeQuestion}
-                  >
-                    Next
-                  </div>
+                  {index1 !== 9 && (
+                    <div
+                      className=" text-[#FAFBFD] text-[16px] font-overused bg-[#8B66FE] h-full px-8 py-2 rounded-full cursor-pointer   "
+                      onClick={changeQuestion}
+                    >
+                      Next
+                    </div>
+                  )}
+                  {index1 == 9 && (
+                    <Link href={"/dashboard/allassessments"}>
+                      <div
+                        className=" text-[#FAFBFD] text-[16px] font-overused bg-[#8B66FE] h-full px-8 py-2 rounded-full cursor-pointer   "
+                        onClick={changeQuestion}
+                      >
+                        Submit
+                      </div>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

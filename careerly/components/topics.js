@@ -45,7 +45,7 @@ const Topics = () => {
   return (
     <div className=" w-full px-4 ">
       <div className="w-full bg-[#191919] rounded-3xl flex flex-col pb-6">
-        <div className=" flex flex-col ">
+        <div className=" flex flex-col pb-6 bg-[#191919] rounded-3xl  ">
           <div className=" py-12  px-6 text-[#FAFBFD] font-space font-medium text-[26px]  ">
             Personal Interests
           </div>

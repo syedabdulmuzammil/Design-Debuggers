@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Assesments = () => {
@@ -20,7 +21,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -28,7 +29,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -36,7 +37,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -44,7 +45,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
           </div>
@@ -54,7 +55,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -62,7 +63,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -70,7 +71,7 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
             <div>
@@ -78,11 +79,23 @@ const Assesments = () => {
                 height={500}
                 width={500}
                 className=" object-cover h-full w-full"
-                src={"/images/Frame 1597883666.png"}
+                src={"/images/web.png"}
               />
             </div>
           </div>
         </div>
+        <Link href={"/dashboard/personal"}>
+          <div className=" flex w-full items-end justify-end pt-16  pb-24 px-4 ">
+            <div className=" h-[55px] ">
+              <Image
+                height={600}
+                width={600}
+                className=" object-cover h-full w-full "
+                src={"/images/check.png"}
+              />
+            </div>
+          </div>
+        </Link>
       </padding>
     </div>
   );

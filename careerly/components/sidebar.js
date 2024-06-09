@@ -10,6 +10,15 @@ import { React, useState } from "react";
 import clsx from "clsx";
 import Question from "@/public/icons/question";
 import Logo from "@/public/icons/logo";
+import Dashboard from "@/public/icons/dashboard";
+import Education from "@/public/icons/education";
+import Personal from "@/public/icons/personal";
+import Recommed from "@/public/icons/recommed";
+import Career from "@/public/icons/career";
+import Mentor from "@/public/icons/mentor";
+import Message from "@/public/icons/message";
+import Link from "next/link";
+import Oppur from "@/public/icons/oppur";
 // import Dashboard from "@/public/icons/dashboard";
 // import Question from "@/public/icons/question";
 
@@ -22,30 +31,39 @@ const Sidebar = () => {
           <Logo />
         </div>
         <div className=" flex flex-col gap-[0.8rem] 2xl:gap-[1.3rem] h-[27rem]  overflow-y-scroll xl:overflow-visible     py-[1rem] ">
-          <div
-            onClick={() => setActiveIndex(0)}
-            className={clsx(
-              "flex font-manrope px-3 border-[1px] py-2 rounded-xl items-center transition-all duration-300 gap-2 w-full  text-[0.95rem] leading-none",
-              activeIndex === 0
-                ? "text-[#16191D] bg-white border-[#E2E4E8]"
-                : "text-[#FFFFFF] border-transparent"
-            )}
-          >
-            <div>{/* <Dashboard activeIndex={activeIndex} /> */}</div>
-            <div className="font-space ">Dashboard</div>
-          </div>
-          <div
-            onClick={() => setActiveIndex(1)}
-            className={clsx(
-              "flex font-manrope px-3 border-[1px] py-2 rounded-xl items-center transition-all duration-300 gap-2 w-full  text-[0.95rem] leading-none",
-              activeIndex === 1
-                ? "text-[#16191D] bg-white border-[#E2E4E8]"
-                : "text-[#FFFFFF] border-transparent"
-            )}
-          >
-            <div>{/* <Mycollege activeIndex={activeIndex} /> */}</div>
-            <div className="font-space ">Educational details</div>
-          </div>
+          <Link href={"/dashboard"}>
+            {" "}
+            <div
+              onClick={() => setActiveIndex(0)}
+              className={clsx(
+                "flex font-manrope px-3 border-[1px] py-2 rounded-xl items-center transition-all duration-300 gap-2 w-full  text-[0.95rem] leading-none",
+                activeIndex === 0
+                  ? "text-[#16191D] bg-white border-[#E2E4E8]"
+                  : "text-[#FFFFFF] border-transparent"
+              )}
+            >
+              <div>
+                <Dashboard activeIndex={activeIndex} />
+              </div>
+              <div className="font-space ">Dashboard</div>
+            </div>
+          </Link>
+          <Link href={"/dashboard/education"}>
+            <div
+              onClick={() => setActiveIndex(1)}
+              className={clsx(
+                "flex font-manrope px-3 border-[1px] py-2 rounded-xl items-center transition-all duration-300 gap-2 w-full  text-[0.95rem] leading-none",
+                activeIndex === 1
+                  ? "text-[#16191D] bg-white border-[#E2E4E8]"
+                  : "text-[#FFFFFF] border-transparent"
+              )}
+            >
+              <div>
+                <Education activeIndex={activeIndex} />
+              </div>
+              <div className="font-space ">Educational details</div>
+            </div>
+          </Link>
           <div
             onClick={() => setActiveIndex(2)}
             className={clsx(
@@ -55,7 +73,9 @@ const Sidebar = () => {
                 : "text-[#FFFFFF] border-transparent"
             )}
           >
-            <div>{/* <Placement activeIndex={activeIndex} /> */}</div>
+            <div>
+              <Personal activeIndex={activeIndex} />
+            </div>
             <div className="font-space">Personal Intrests</div>
           </div>
           <div
@@ -67,7 +87,9 @@ const Sidebar = () => {
                 : "text-[#FFFFFF] border-transparent"
             )}
           >
-            <div>{/* <Message activeIndex={activeIndex} /> */}</div>
+            <div>
+              <Recommed activeIndex={activeIndex} />
+            </div>
             <div className="font-space">Recommendation</div>
           </div>
 
@@ -80,7 +102,9 @@ const Sidebar = () => {
                 : "text-[#FFFFFF] border-transparent"
             )}
           >
-            <div>{/* <Student activeIndex={activeIndex} /> */}</div>
+            <div>
+              <Career activeIndex={activeIndex} />
+            </div>
             <div className="font">Career Assessments </div>
           </div>
           <div
@@ -92,7 +116,9 @@ const Sidebar = () => {
                 : "text-[#FFFFFF] border-transparent"
             )}
           >
-            <div>{/* <Test activeIndex={activeIndex} /> */}</div>
+            <div>
+              <Mentor activeIndex={activeIndex} />
+            </div>
             <div className="font-space">Mentors</div>
           </div>
           <div
@@ -104,26 +130,30 @@ const Sidebar = () => {
                 : "text-[#FFFFFF] border-transparent"
             )}
           >
-            <div>{/* <Report activeIndex={activeIndex} /> */}</div>
+            <div>
+              <Message activeIndex={activeIndex} />
+            </div>
             <div className="font-space">Messages</div>
           </div>
+          <Link href={"/"}>
+            <div
+              onClick={() => setActiveIndex(7)}
+              className={clsx(
+                "flex font-manrope px-3 border-[1px] py-2 rounded-xl items-center transition-all duration-300 gap-2 w-full  text-[0.95rem] leading-none",
+                activeIndex === 7
+                  ? "text-[#16191D] bg-white border-[#E2E4E8]"
+                  : "text-[#FFFFFF] border-transparent"
+              )}
+            >
+              <div>
+                <Oppur activeIndex={activeIndex} />
+              </div>
+              <div className="font-space">Oppurtunities</div>
+            </div>
+          </Link>
         </div>
       </div>
-      <div>
-        <div className=" flex flex-col">
-          <div className=" w-full h-[6rem] border-[2px] flex items-center justify-center border-[#EAEEF3] rounded-3xl ">
-            <Question />
-          </div>
-          <div className=" flex flex-col items-center justify-center gap-1 w-full">
-            <div className=" font-satoshi text-[0.9rem] font-medium text-[#A4AEBC] ">
-              Stuck somehwere need help?
-            </div>
-            <div className=" font-satoshi text-[0.9rem] font-medium text-[#A4AEBC] ">
-              Get quick help from us
-            </div>
-          </div>
-        </div>
-      </div>
+      <div></div>
     </div>
   );
 };
