@@ -1,6 +1,4 @@
 import Activitycard from "@/components/activitycard";
-import Padding from "@/components/padding";
-
 import React from "react";
 
 const Activities = () => {
@@ -35,9 +33,9 @@ const Activities = () => {
   ];
 
   return (
-    <div className={"w-full pr-3"}>
-      <div className=" flex flex-col bg-[#FFFFFF] border-[#E2E4E8] border rounded-3xl  w-full  ">
-        <div className=" flex font-satoshi px-9 py-4 text-[#000000] text-[1.6rem] font-medium pb-6 ">
+    <div className={"w-full pr-12 "}>
+      <div className=" flex flex-col bg-[#191919]   rounded-3xl  w-full overflow-hidden  ">
+        <div className=" flex font-overused px-9 py-4 text-[white] text-[36px] font-semibold pb-6 ">
           Recent Activity
         </div>
         <div className=" w-full flex flex-col ">

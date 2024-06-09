@@ -5,7 +5,7 @@ import Card2 from "./card2";
 
 const Personal = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-[#191919] rounded-3xl ">
       <Padding>
         <div className="font-space font-semibold text-[26px] text-[#FAFBFD] border-b border-[#333333] py-9 ">
           Personal Interests{" "}

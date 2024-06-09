@@ -26,7 +26,7 @@ const Homewrapper = () => {
     }
   };
   return (
-    <div>
+    <div className="px-12">
       <Hero />
       <div className=" h-[20vh] bg-black "></div>
       <Secondcomp />
@@ -34,7 +34,6 @@ const Homewrapper = () => {
       <Fourthcomp />
       <Fifthcompo />
       <Sixcomp />
-      <Personal />
     </div>
   );
 };

@@ -3,10 +3,8 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div>
-      <div>
-        <Dashhomewrapper />
-      </div>
+    <div className=" pl-6 ">
+      <Dashhomewrapper />
     </div>
   );
 };

@@ -16,7 +16,7 @@ import Logo from "@/public/icons/logo";
 const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div className=" min-h-[100%] px-7 pt-8 pb-8 fixed top-0 left-0 min-w-[15%] max-w-[15%] z-[1000]  flex flex-col justify-between gap-2 bg-[black]  ">
+    <div className=" min-h-[100%] px-7 pt-8 pb-8 fixed top-0 left-0 min-w-[15%] max-w-[15%] z-[1000]  flex flex-col justify-between gap-2 bg-[black] border-r-[1px] border-[#323232]  ">
       <div className=" flex flex-col items-start gap-8 2xl:gap-16 ">
         <div>
           <Logo />
