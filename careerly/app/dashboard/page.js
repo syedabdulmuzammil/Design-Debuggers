@@ -1,7 +1,14 @@
+import Dashhomewrapper from "@/sections/dashboard/dashboardwrapper";
 import React from "react";
 
 const Page = () => {
-  return <div>hello</div>;
+  return (
+    <div>
+      <div>
+        <Dashhomewrapper />
+      </div>
+    </div>
+  );
 };
 
 export default Page;

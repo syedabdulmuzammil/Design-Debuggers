@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Marquee from "react-fast-marquee";
 import { easeInOut, motion, useMotionValue } from "framer-motion";
 import Scroll from "@/public/icons/scroll";
 

@@ -11,12 +11,16 @@ const Navbar = () => {
   const path1 = usePathname();
 
   return (
-    <Padding className={" fixed bg-black top-0 left-0 w-full z-[999] "}>
+    <Padding
+      className={` fixed bg-black top-0 left-0 w-full z-[999] ${
+        path1.includes("dashboard") ? "hidden" : "flex"
+      } `}
+    >
       <div className=" min-w-full rounded-full bg-black  flex items-center justify-between px-5 py-5 ">
         <motion.div
           className={`bg-white ${path.includes("login") ? "hidden" : "flex"} ${
             path1.includes("signup") ? "hidden" : "flex"
-          }  font-spacee w-fit font-medium   gap-8 justify-center items-center rounded-full text-[15px] 
+          }   font-spacee w-fit font-medium   gap-8 justify-center items-center rounded-full text-[15px] 
           px-[20px] py-[10px] overflow-hidden `}
         >
           <div className=" cursor-pointer ">Home</div>
