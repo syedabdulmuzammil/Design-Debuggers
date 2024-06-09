@@ -31,9 +31,11 @@ const Sidebar = () => {
   return (
     <div className=" min-h-[100%] px-7 pt-8 pb-8 fixed top-0 left-0 min-w-[15%] max-w-[15%] z-[1000]  flex flex-col justify-between gap-2 bg-[black] border-r-[1px] border-[#323232]  ">
       <div className=" flex flex-col items-start gap-8 2xl:gap-16 ">
-        <div>
-          <Logo />
-        </div>
+        <Link href={"/"}>
+          <div>
+            <Logo />
+          </div>
+        </Link>
         <div className=" flex flex-col gap-[0.8rem] 2xl:gap-[1.3rem] h-[27rem]  overflow-y-scroll xl:overflow-visible     py-[1rem] ">
           <Link href={"/dashboard"}>
             {" "}
@@ -84,7 +86,7 @@ const Sidebar = () => {
               <div className="font-space">Personal Interests</div>
             </div>
           </Link>
-          <Link href={"/dashboard/oppur"}>
+          <Link href={"/dashboard/alljobs"}>
             <div
               onClick={() => setActiveIndex(3)}
               className={clsx(
@@ -169,7 +171,7 @@ const Sidebar = () => {
             </div>
           </div>
           <div
-            className=" pl-5"
+            className=" pl-5 cursor-pointer py-4"
             onClick={() => {
               onSet(!set);
             }}
@@ -180,10 +182,9 @@ const Sidebar = () => {
       </div>
       <Link href={"/login"}>
         <motion.div
-          className=" absolute bottom-28 h-[44px] w-[205px] cursor-pointer   "
-          animate={{
-            bottom: set ? "7rem" : "-3rem",
-          }}
+          className={` absolute bottom-28 h-[44px] w-[205px] cursor-pointer ${
+            set ? "flex" : "hidden"
+          }    `}
           transition={{
             duration: 0.4,
             ease: easeInOut,

@@ -132,7 +132,7 @@ const Education = () => {
                         <motion.div
                           className={`absolute top-12 left-0 flex flex-col gap-3 py-4 px-4 rounded-2xl bg-[#292929] w-full  `}
                           onClick={() => {
-                            setOpen(false);
+                            setOpen1(false);
                           }}
                           initial={{
                             y: -20,
@@ -152,7 +152,7 @@ const Education = () => {
                           }}
                         >
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen1(false);
                               putSet1("Engineering");
@@ -161,7 +161,7 @@ const Education = () => {
                             Engineering
                           </div>
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen1(false);
                               putSet1("Arts");
@@ -170,7 +170,7 @@ const Education = () => {
                             Arts
                           </div>
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen1(false);
                               putSet1("Commerce");
@@ -251,7 +251,7 @@ const Education = () => {
                           }}
                         >
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen(false);
                               putSet("Graduated");
@@ -260,7 +260,7 @@ const Education = () => {
                             Graduated
                           </div>
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen(false);
                               putSet("Post-Graduate");
@@ -269,7 +269,7 @@ const Education = () => {
                             Post-Graduate
                           </div>
                           <div
-                            className=" cursor-pointer hover:bg-black rounded-xl w-fit p-2 "
+                            className=" cursor-pointer hover:bg-black rounded-xl w-full p-2 "
                             onClick={() => {
                               setOpen(false);
                               putSet("Masters");

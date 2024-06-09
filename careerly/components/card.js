@@ -9,7 +9,7 @@ const Card = ({ heading, bg, textcolor, para, subhead, at }) => {
         bg
       )}
     >
-      <div className=" flex flex-col gap-8 ">
+      <div className=" flex flex-col gap-7 ">
         <div
           className={clsx(
             " font-overused font-medium text-[96px] max-w-[350px] leading-[50px]  ",
@@ -20,7 +20,7 @@ const Card = ({ heading, bg, textcolor, para, subhead, at }) => {
         </div>
         <div
           className={clsx(
-            " font-overused text-[42px] font-medium leading-[2.6rem]  ",
+            " font-space text-[36px] font-medium leading-[2.5rem]  ",
             textcolor
           )}
         >
@@ -28,7 +28,7 @@ const Card = ({ heading, bg, textcolor, para, subhead, at }) => {
         </div>
         <div
           className={clsx(
-            " font-overused text-[14px] font-medium leading-[1.8rem]  ",
+            " font-overused text-[14px] font-medium leading-none  ",
             textcolor
           )}
         >

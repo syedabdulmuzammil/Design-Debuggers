@@ -5,7 +5,7 @@ const Plaincard = ({ heading, number, subhead }) => {
   return (
     <div className=" h-full w-full p-5 flex flex-col justify-between font-overused rounded-3xl bg-[#191919]     ">
       <div className=" w-full flex items-center justify-between ">
-        <div className=" text-[white]  font-medium text-[1.8rem]  ">
+        <div className=" text-[white] font-space  font-medium text-[1.8rem]  ">
           {heading}
         </div>
         <Rightarrow />
