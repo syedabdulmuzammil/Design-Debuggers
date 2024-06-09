@@ -41,7 +41,9 @@ const Navbar = () => {
             path.includes("login") ? "hidden" : "flex"
           } ${path1.includes("signup") ? "hidden" : "flex"} `}
         >
-          <div className=" text-[#FFFFFF] font-overused ">Sign in</div>
+          <Link href={"/login"}>
+            <div className=" text-[#FFFFFF] font-overused ">Sign in</div>
+          </Link>
           <div>
             <Bar />
           </div>
