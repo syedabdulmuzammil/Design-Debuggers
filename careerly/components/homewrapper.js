@@ -36,7 +36,6 @@ const Homewrapper = () => {
       <Fourthcomp />
       <Fifthcompo />
       <Sixcomp />
-      <Assesments/>
     </div>
   );
 };
