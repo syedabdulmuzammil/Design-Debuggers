@@ -35,7 +35,7 @@ const Activities = () => {
   ];
 
   return (
-    <Padding className={"w-full"}>
+    <div className={"w-full pr-3"}>
       <div className=" flex flex-col bg-[#FFFFFF] border-[#E2E4E8] border rounded-3xl  w-full  ">
         <div className=" flex font-satoshi px-9 py-4 text-[#000000] text-[1.6rem] font-medium pb-6 ">
           Recent Activity
@@ -53,7 +53,7 @@ const Activities = () => {
           ))}
         </div>
       </div>
-    </Padding>
+    </div>
   );
 };
 

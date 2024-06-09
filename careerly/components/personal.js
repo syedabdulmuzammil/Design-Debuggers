@@ -1,7 +1,7 @@
 import React from "react";
 import Padding from "./padding";
-import Card from "./card";
 import Stars from "@/public/icons/stars";
+import Card2 from "./card2";
 
 const Personal = () => {
   return (
@@ -14,47 +14,55 @@ const Personal = () => {
         <div>
           <div className="font-space font-medium text-[26px] text-[#FAFBFD] py-5 ">
             Recommendation based on CSE
-          </div> 
+          </div>
           <div className="flex gap-[48px] py-10">
-          <Card img={"/images/Rectangle 18585.png"}
-          name={"Artificial Intelligence (AI)"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/robo.png"}
-          name={"Machine Learning (ML)"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/network.png"}
-          name={"Internet of Things (IoT)"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/laptop.png"}
-          name={"Software Engineerin"}
-          rating={<Stars/>}
-          ></Card>
+            <Card2
+              img={"/images/Rectangle 18585.png"}
+              name={"Artificial Intelligence (AI)"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/robo.png"}
+              name={"Machine Learning (ML)"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/network.png"}
+              name={"Internet of Things (IoT)"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/laptop.png"}
+              name={"Software Engineerin"}
+              rating={<Stars />}
+            ></Card2>
           </div>
         </div>
         <div>
           <div className="font-space font-medium text-[26px] text-[#FAFBFD] py-5 ">
-          Popular  Careers
-          </div> 
+            Popular Careers
+          </div>
           <div className="flex gap-[48px] py-10">
-          <Card img={"/images/mobile.png"}
-          name={"Cybersecurity"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/database.png"}
-          name={"Database Systems"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/cloud.png"}
-          name={"Computer Networks"}
-          rating={<Stars/>}
-          ></Card>
-          <Card img={"/images/hello.png"}
-          name={"Operating Systems"}
-          rating={<Stars/>}
-          ></Card>
+            <Card2
+              img={"/images/mobile.png"}
+              name={"Cybersecurity"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/database.png"}
+              name={"Database Systems"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/cloud.png"}
+              name={"Computer Networks"}
+              rating={<Stars />}
+            ></Card2>
+            <Card2
+              img={"/images/hello.png"}
+              name={"Operating Systems"}
+              rating={<Stars />}
+            ></Card2>
           </div>
         </div>
       </Padding>
