@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Padding from "./padding";
 import Logo from "@/public/icons/logo";
 import Bar from "@/public/icons/bar";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ ref1 }) => {
   const path = usePathname();
   const path1 = usePathname();
 
@@ -27,7 +27,14 @@ const Navbar = () => {
           <Link href={"/"}>
             <div className=" cursor-pointer ">Home</div>
           </Link>
-          <div className=" cursor-pointer ">Features</div>
+          <div
+            className=" cursor-pointer "
+            onClick={() => {
+              ref1.current.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Features
+          </div>
           <Link href={" /careers "}>
             <div className=" cursor-pointer ">Careers</div>
           </Link>

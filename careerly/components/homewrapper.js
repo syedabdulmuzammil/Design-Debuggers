@@ -2,7 +2,7 @@
 import Padding from "@/components/padding";
 import Image from "next/image";
 import { collection, addDoc, getDoc, QuerySnapshot } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { db } from "@/app/firebase";
 import Hero from "./hero";
 import Secondcomp from "./secondcomp";
@@ -14,8 +14,10 @@ import Faqs from "./faqs";
 import Personal from "./personal";
 import Info from "./info";
 import Assesments from "./assesments";
+import Navbar from "./navbar";
 
 const Homewrapper = () => {
+  const ref1 = useRef();
   const addItem = async (e) => {
     e.preventDefault();
     if (newItem.name !== "" && newItem.price !== "") {
@@ -28,13 +30,16 @@ const Homewrapper = () => {
     }
   };
   return (
-    <div className="">
+    <div className=" pt-12 ">
+      <Navbar ref1={ref1} />
       <Hero />
       <div className=" h-[20vh] bg-black "></div>
       <Secondcomp />
       <Thirdcomp />
       <Fourthcomp />
-      <Fifthcompo />
+      <div ref={ref1}>
+        <Fifthcompo />
+      </div>
       <Sixcomp />
     </div>
   );
