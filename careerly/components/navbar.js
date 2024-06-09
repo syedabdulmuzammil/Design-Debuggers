@@ -24,7 +24,9 @@ const Navbar = () => {
           }   font-spacee w-fit font-medium   gap-8 justify-center items-center rounded-full text-[15px] 
           px-[20px] py-[10px] overflow-hidden `}
         >
-          <div className=" cursor-pointer ">Home</div>
+          <Link href={"/"}>
+            <div className=" cursor-pointer ">Home</div>
+          </Link>
           <div className=" cursor-pointer ">Features</div>
           <Link href={" /careers "}>
             <div className=" cursor-pointer ">Careers</div>
