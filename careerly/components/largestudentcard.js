@@ -16,7 +16,7 @@ const Largestudentcard = ({
   image,
 }) => {
   return (
-    <div className=" h-full w-full bg-[#191919] flex flex-col rounded-3xl border-[1px] border-[#333333] p-6  over ">
+    <div className=" h-full w-full bg-[#292929] flex flex-col rounded-3xl border-[2px] border-[#333333] p-6  over ">
       <div className=" flex flex-col w-full items-center gap-4 ">
         <div className=" border-2 border-[#E2E2E2] h-[118px] w-[118px] rounded-full overflow-hidden ">
           <Image
@@ -35,14 +35,14 @@ const Largestudentcard = ({
             {/* <Dot /> */}
             <div>{branch}</div>
           </div>
-          <div className=" flex items-center gap-1  ">
-            <div className=" px-[12px] py-[4px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
+          <div className=" flex items-center gap-2 pb-4  ">
+            <div className=" px-[12px] py-[6px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
               {what}
             </div>
-            <div className=" px-[12px] py-[4px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
+            <div className=" px-[12px] py-[6px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
               {year}
             </div>
-            <div className=" px-[12px] py-[4px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
+            <div className=" px-[12px] py-[6px] bg-[#FFFFFF] border-1 rounded-3xl text-[black] font-manrope font-semibold text-[0.8rem] leading-none  ">
               {employed}
             </div>
           </div>

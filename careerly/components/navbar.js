@@ -5,20 +5,17 @@ import Logo from "@/public/icons/logo";
 import Bar from "@/public/icons/bar";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = () => {
   const path = usePathname();
   const path1 = usePathname();
-  
-  
 
   return (
     <Padding
       className={` fixed bg-black top-0 left-0 w-full z-[999] ${
         path1.includes("dashboard") ? "hidden" : "flex"
-      }   ${
-        path1.includes("videochat") ? "hidden" : "flex"
-      }   `}
+      }   ${path1.includes("videochat") ? "hidden" : "flex"}   `}
     >
       <div className=" min-w-full rounded-full bg-black  flex items-center justify-between px-5 py-5 ">
         <motion.div
@@ -29,11 +26,15 @@ const Navbar = () => {
         >
           <div className=" cursor-pointer ">Home</div>
           <div className=" cursor-pointer ">Features</div>
-          <div className=" cursor-pointer ">Careers</div>
+          <Link href={" /careers "}>
+            <div className=" cursor-pointer ">Careers</div>
+          </Link>
         </motion.div>
-        <div className=" absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 ">
-          <Logo />
-        </div>
+        <Link href={"/"}>
+          <div className=" absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 ">
+            <Logo />
+          </div>
+        </Link>
 
         <motion.div
           className={` flex rounded-full text-[18px] gap-6 items-center px-2 leading-none ${

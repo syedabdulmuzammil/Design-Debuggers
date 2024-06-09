@@ -1,6 +1,7 @@
 import Send from "@/public/icons/send";
 import Video from "@/public/icons/video";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Messages = () => {
@@ -26,7 +27,9 @@ const Messages = () => {
               </div>
             </div>
           </div>
-          <Video />
+          <Link href={"/videochat"}>
+            <Video />
+          </Link>
         </div>
         <div className="w-full border-[1px] border-[#333333] "></div>
         <div className=" w-full flex flex-col gap-6 pt-8 ">
@@ -105,7 +108,7 @@ const Messages = () => {
             </div>
           </div>
         </div>
-        <div className=" pt-36 sticky bottom-0 left-0  ">
+        <div className=" pt-36 sticky bottom-5 left-0  ">
           <div className=" w-full px-6 bg-[#2F2F2F] h-[65px] flex justify-between items-center rounded-full  ">
             <input
               className=" w-full bg-[#2F2F2F] outline-none input "

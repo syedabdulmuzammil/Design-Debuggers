@@ -25,7 +25,7 @@ const Mentors = () => {
       "API Deevelopment",
       "Devops Practices",
     ],
-    image: "/i mages/eion.png",
+    image: "/images/eion.png",
   };
 
   const data = [
@@ -36,7 +36,7 @@ const Mentors = () => {
       what: "Google",
       employed: "Unemployed",
       year: "2024",
-      image: "/i mages/eion.png",
+      image: "/images/eion.png",
     },
     {
       name: "Eion Morgan",
@@ -45,7 +45,7 @@ const Mentors = () => {
       what: "Wipro",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p2.png",
+      image: "/images/p2.png",
     },
     {
       name: "Eion Morgan",
@@ -54,7 +54,7 @@ const Mentors = () => {
       what: "Amazon",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p1.png",
+      image: "/images/p1.png",
     },
     {
       name: "Eion Morgan",
@@ -63,7 +63,7 @@ const Mentors = () => {
       what: "Google",
       employed: "Unemployed",
       year: "2024",
-      image: "/i mages/eion.png",
+      image: "/images/eion.png",
     },
     {
       name: "Eion Morgan",
@@ -72,7 +72,7 @@ const Mentors = () => {
       what: "Wipro",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p2.png",
+      image: "/images/p2.png",
     },
     {
       name: "Eion Morgan",
@@ -81,7 +81,7 @@ const Mentors = () => {
       what: "Amazon",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p1.png",
+      image: "/images/p1.png",
     },
     {
       name: "Eion Morgan",
@@ -90,7 +90,7 @@ const Mentors = () => {
       what: "Google",
       employed: "Unemployed",
       year: "2024",
-      image: "/i mages/eion.png",
+      image: "/images/eion.png",
     },
     {
       name: "Eion Morgan",
@@ -99,7 +99,7 @@ const Mentors = () => {
       what: "Wipro",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p2.png",
+      image: "/images/p2.png",
     },
     {
       name: "Eion Morgan",
@@ -108,7 +108,7 @@ const Mentors = () => {
       what: "Amazon",
       employed: "Employed",
       year: "2024",
-      image: "/i mages/p1.png",
+      image: "/images/p1.png",
     },
   ];
 
