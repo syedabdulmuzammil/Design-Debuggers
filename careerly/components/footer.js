@@ -7,12 +7,13 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const path = usePathname();
   const path1 = usePathname();
+ 
   return (
     <div
       className={` pt-12 pb-4  md:pt-6 bg-white w-full ${
         path.includes("login") ? "hidden" : ""
       } ${path1.includes("signup") ? "hidden" : ""}
-    ${path1.includes("dashboard") ? "hidden" : ""}  `}
+    ${path1.includes("dashboard") ? "hidden" : ""}  ${path1.includes("videochat") ? "hidden" : ""} `}
     >
       <Padding className={" py-10"}>
         <div className=" lg:flex gap-10 lg:gap-20 xl:gap-28 ">
