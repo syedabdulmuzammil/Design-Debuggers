@@ -18,7 +18,7 @@ const Sublayout = ({ children }) => {
       </div>
       <div
         className={` 
-             w-[85%] relative bg-black z-[100000000]`}
+             w-[85%] pt-6 relative bg-black z-[100000000]`}
       >
         <div className="relative z-[1001]">{children}</div>
       </div>
