@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=" pt-[6rem] w-full relative bg-black">
+      <body className="  w-full relative bg-black">
         <Navbar />
         <Lenis1>{children}</Lenis1>
         <Footer />
