@@ -5,7 +5,7 @@ const Card = ({ heading, bg, textcolor, para, subhead, at }) => {
   return (
     <div
       className={clsx(
-        " flex flex-col justify-between min-w-[400px] max-w-[400px]  rounded-3xl pl-6 pr-12 py-6 min-h-[30rem]  ",
+        " flex flex-col justify-between w-full  rounded-3xl pl-6 pr-12 py-6 min-h-[30rem]  ",
         bg
       )}
     >

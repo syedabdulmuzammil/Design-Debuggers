@@ -5,8 +5,13 @@ import React from "react";
 
 const Homecards = () => {
   return (
-    <div className=" flex gap-3 w-full pb-4 pl-12  ">
-      <div className=" min-w-[400px] max-w-[400px] ">
+    <div
+      className=" grid grid-cols-3 gap-3 w-full pb-4  "
+      style={{
+        paddingRight: "50px",
+      }}
+    >
+      <div className=" ">
         <Card
           bg={"bg-[#191919]"}
           textcolor={"text-white"}
@@ -16,7 +21,7 @@ const Homecards = () => {
           at={"Complete"}
         />
       </div>
-      <div className=" min-w-[400px] max-w-[400px] ">
+      <div className=" ">
         <Card
           bg={"bg-[#191919]"}
           textcolor={"text-white"}
@@ -26,7 +31,7 @@ const Homecards = () => {
           at={"View now"}
         />
       </div>
-      <div className=" w-[40%] flex flex-col gap-3 min-h-[30rem] ">
+      <div className="  flex flex-col gap-3 min-h-[30rem] ">
         <div className=" w-full h-full   ">
           <Plaincard
             heading={"Mentors Available"}
@@ -34,7 +39,7 @@ const Homecards = () => {
             subhead={"Organisations visited the campus"}
           />{" "}
         </div>
-        <div className=" w-full h-full grid grid-cols-2 gap-3 ">
+        <div className=" w-full h-full grid grid-cols-1 gap-3 ">
           <Plaincard
             heading={"Assessments"}
             number={"12"}
@@ -42,11 +47,11 @@ const Homecards = () => {
               "We have identified assessments that are pending completion"
             }
           />
-          <Plaincard
+          {/* <Plaincard
             heading={"Suggested Careers by Ai"}
             number={"30"}
             subhead={"Internships"}
-          />{" "}
+          />{" "} */}
         </div>
       </div>
     </div>

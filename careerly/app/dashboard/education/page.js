@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className=" px-12 w-full ">
+    <div className="  w-full ">
       <Education />
     </div>
   );

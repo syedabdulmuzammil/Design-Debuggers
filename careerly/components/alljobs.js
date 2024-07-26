@@ -158,7 +158,7 @@ const Alljobs = () => {
           </div>
         </div>
         <h1 className="text-3xl font-bold mb-4">Job Listings</h1>
-        <div className="grid grid-cols-4 gap-y-14  gap-4 pr-12">
+        <div className="grid grid-cols-3 gap-y-14  gap-4 pr-12">
           {data.map((job, index) => (
             <Newcard
               img={job.img}

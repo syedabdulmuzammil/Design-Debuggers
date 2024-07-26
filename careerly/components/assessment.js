@@ -135,7 +135,7 @@ const Assessment = () => {
                     <div
                       className={`  px-[52px] py-[20px] rounded-3xl text-[16px] font-medium font-overused text-[white] ${
                         activeTab1 == index ? "bg-[#8B66FE]" : " bg-[#292929] "
-                      } border-[1px] border-[#333333] flex items-center justify-center  `}
+                      } border-[1px] cursor-pointer border-[#333333] flex items-center justify-center  `}
                       onClick={() => {
                         setActiveTab1(index);
                       }}

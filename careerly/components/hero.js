@@ -26,7 +26,7 @@ const Hero = () => {
     >
       <Padding>
         <div className=" bg-transparent flex flex-col text-white absolute top-[60%] -translate-y-1/2 left-[50%] z-[100] -translate-x-1/2 ">
-          <div className="text-[85px] font-medium text-[#AEAEAE] font-space max-h-fit overflow-hidden ">
+          <div className="text-[75px] font-medium text-[#AEAEAE] font-space max-h-fit overflow-hidden ">
             <motion.div
               initial={{
                 translateY: "300px",
@@ -60,7 +60,7 @@ const Hero = () => {
               <div className="bg-[#FF8A66] font-medium font-overused  leading-none w-fit h-fit text-[59px] px-[23px] pb-[11px] rounded-full text-black ">
                 Career
               </div>
-              <div className="text-[80px] font-medium text-[#AEAEAE] font-space ">
+              <div className="text-[70px] font-medium text-[#AEAEAE] font-space ">
                 {" "}
                 with Careerly
               </div>

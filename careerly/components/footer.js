@@ -7,13 +7,15 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const path = usePathname();
   const path1 = usePathname();
- 
+
   return (
     <div
       className={` pt-12 pb-4  md:pt-6 bg-white w-full ${
         path.includes("login") ? "hidden" : ""
       } ${path1.includes("signup") ? "hidden" : ""}
-    ${path1.includes("dashboard") ? "hidden" : ""}  ${path1.includes("videochat") ? "hidden" : ""} `}
+    ${path1.includes("dashboard") ? "hidden" : ""}  ${
+        path1.includes("videochat") ? "hidden" : ""
+      } `}
     >
       <Padding className={" py-10"}>
         <div className=" lg:flex gap-10 lg:gap-20 xl:gap-28 ">
@@ -25,7 +27,7 @@ const Footer = () => {
                 us?
               </div>
               <div className=" flex items-center justify-between bg-black  gap-3 font-gilroy font-semibold text-white rounded-full px-6 py-3 mt-6 lg:mt-10">
-                Call Devsed
+                Call Us
               </div>
             </div>
             <div className=" flex gap-3 items-center py-16 md:py-0 lg:pt-20">
@@ -85,13 +87,13 @@ const Footer = () => {
                 <div>
                   <div className=" text-[#474747] font-avlon pb-1 ">Phone</div>
                   <div className=" text-[#3F4046] text-[0.95rem] font-gilroy font-medium border-b-1 border-[#3F4046] w-max leading-[1.2rem] ">
-                    +91 9885978663
+                    +91 8801102783
                   </div>
                 </div>
                 <div>
                   <div className=" text-[#474747] font-avlon pb-1 ">Email</div>
                   <div className=" text-[#3F4046] text-[0.95rem] font-gilroy font-medium border-b-1 border-[#3F4046] w-max leading-[1.2rem] ">
-                    Official@devsed.com
+                    abdulmuzammil@devsed.com
                   </div>
                 </div>
               </div>
@@ -115,7 +117,7 @@ const Footer = () => {
             <div>Canada</div>
           </div>
           <div className=" font-gilroy font-semibold pt-6 md:text-center lg:text-start ">
-            Devsed © 2024
+            Muzammil © 2024
           </div>
         </div>
       </Padding>

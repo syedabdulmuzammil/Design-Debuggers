@@ -16,7 +16,7 @@ const Personal = () => {
           <div className="font-space font-medium text-[26px] text-[#FAFBFD] py-5 ">
             Recommendation based on CSE
           </div>
-          <div className="flex gap-[48px] py-10">
+          <div className=" grid grid-cols-3 gap-[48px] py-10">
             <Link href={"/dashboard/singlesubject"}>
               {" "}
               <Card2
@@ -45,7 +45,7 @@ const Personal = () => {
               {" "}
               <Card2
                 img={"/images/laptop.png"}
-                name={"Software Engineerin"}
+                name={"Software Engineering"}
                 rating={<Stars />}
               ></Card2>
             </Link>
@@ -55,7 +55,7 @@ const Personal = () => {
           <div className="font-space font-medium text-[26px] text-[#FAFBFD] py-5 ">
             Popular Careers
           </div>
-          <div className="flex gap-[48px] py-10">
+          <div className=" grid grid-cols-3 gap-[48px] py-10">
             <Card2
               img={"/images/mobile.png"}
               name={"Cybersecurity"}

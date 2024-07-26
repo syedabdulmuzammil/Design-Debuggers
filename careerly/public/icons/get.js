@@ -4,7 +4,7 @@ const Get = () => {
   return (
     <div>
       <svg
-        width="800"
+        width="700"
         height="150"
         viewBox="0 0 851 165"
         fill="none"

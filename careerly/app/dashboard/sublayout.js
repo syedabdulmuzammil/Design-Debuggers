@@ -9,7 +9,7 @@ const Sublayout = ({ children }) => {
   return (
     <div className=" min-w-full flex relative z-[100000000] ">
       <div
-        className={`  w-[15%] ${
+        className={`  w-[20%] ${
           path == "/dashboard/addassessment" ? "hidden" : "hidden xl:flex "
         }  
        relative`}
@@ -18,7 +18,7 @@ const Sublayout = ({ children }) => {
       </div>
       <div
         className={` 
-             w-[85%] pt-6 relative bg-black z-[100000000]`}
+             w-[80%] pt-6 relative bg-black z-[100000000]`}
       >
         <div className="relative z-[1001]">{children}</div>
       </div>

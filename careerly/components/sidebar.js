@@ -29,7 +29,7 @@ const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [set, onSet] = useState(false);
   return (
-    <div className=" min-h-[100%] px-7 pt-8 pb-8 fixed top-0 left-0 min-w-[15%] max-w-[15%] z-[1000]  flex flex-col justify-between gap-2 bg-[black] border-r-[1px] border-[#323232]  ">
+    <div className=" min-h-[100%] px-7 pt-8 pb-8 fixed top-0 left-0 w-[19rem] z-[1000]  flex flex-col justify-between gap-2 bg-[black] border-r-[1px] border-gray-400  ">
       <div className=" flex flex-col items-start gap-8 2xl:gap-16 ">
         <Link href={"/"}>
           <div>
@@ -182,7 +182,7 @@ const Sidebar = () => {
       </div>
       <Link href={"/login"}>
         <motion.div
-          className={` absolute bottom-28 h-[44px] w-[205px] cursor-pointer ${
+          className={` absolute left-2 bottom-[6rem] h-[44px] w-[205px] cursor-pointer ${
             set ? "flex" : "hidden"
           }    `}
           transition={{

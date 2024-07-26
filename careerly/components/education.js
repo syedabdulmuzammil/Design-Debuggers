@@ -354,7 +354,7 @@ const Education = () => {
                 >
                   <div
                     className={clsx(
-                      "  px-12 py-[1rem]   cursor-pointer  relative z-40 rounded-full  transition-all font-overused font-semibold text-[1rem] md:text-[0.9rem] duration-1000",
+                      "  px-6 py-[1rem]   cursor-pointer  relative z-40 rounded-full  transition-all font-overused font-semibold text-[1rem] md:text-[0.9rem] duration-1000",
                       activeTab == 1 ? "text-[#191919]" : "text-[white]"
                     )}
                     onClick={() => changeTab(1)}
@@ -362,7 +362,7 @@ const Education = () => {
                     {activeTab == 1 && (
                       <motion.span
                         layoutId="tabs"
-                        className={`  px-12 py-[1rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-black  
+                        className={`  px-6 py-[1rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-black  
                 bg-[white]    `}
                       />
                     )}
@@ -373,7 +373,7 @@ const Education = () => {
 
                   <div
                     className={clsx(
-                      " px-12 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
+                      " px-6 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
                       activeTab == 2 ? "text-[#191919]" : "text-[white]"
                     )}
                     onClick={() => changeTab(2)}
@@ -390,7 +390,7 @@ const Education = () => {
                   </div>
                   <div
                     className={clsx(
-                      " px-12 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
+                      " px-6 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
                       activeTab == 3 ? "text-[#191919]" : "text-[white]"
                     )}
                     onClick={() => changeTab(3)}
@@ -407,7 +407,7 @@ const Education = () => {
                   </div>
                   <div
                     className={clsx(
-                      " px-12 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
+                      " px-6 py-[1rem]   cursor-pointer  relative z-40 rounded-full font-overused font-semibold  transition-all text-[1rem] md:text-[0.9rem] duration-1000",
                       activeTab == 4 ? "text-[#191919]" : "text-[white]"
                     )}
                     onClick={() => changeTab(4)}

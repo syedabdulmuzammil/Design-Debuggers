@@ -11,29 +11,11 @@ const Page = () => {
   const [message, setMessage] = useState("");
   const router = useRouter();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Dummy user data (replace with your own)
-    const dummyUsers = [
-      { username: "user1@gmail.com", password: "password1" },
-      { username: "user2@gmail.com", password: "password2" },
-      // Add more dummy users as needed
-    ];
-
-    // Find user in dummy data
-    const user = dummyUsers.find(
-      (user) => user.username === username && user.password === password
-    );
-
-    // Display login result message
-    if (user) {
-      setMessage(true);
-    } else {
-      setMessage(false);
-    }
-    if (message) {
+  const handleSubmit = () => {
+    if (username == "syed@gmail.com" && password == "muzammil") {
       router.push("/dashboard");
+    } else {
+      alert("incorrect details");
     }
   };
 

@@ -3,7 +3,7 @@ import React from "react";
 
 const Activitycard = ({ head, company, svg, role, date, description }) => {
   return (
-    <div className=" w-full flex items-start justify-between bg-[#191919] border-b-1 border-[#E2E4E8] px-9 py-7  ">
+    <div className=" w-full flex items-start justify-between bg-[#191919] border-t-[1px] border-[#323233] px-9 py-7  ">
       <div className=" w-full flex flex-col gap-1 ">
         <div className=" w-full flex font-manrope font-medium text-[0.9rem] text-[white]  ">
           {head}

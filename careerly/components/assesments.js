@@ -16,72 +16,88 @@ const Assesments = () => {
         </div>
         <div className="flex flex-col gap-8 px-8 py-8">
           <div className="flex gap-8">
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
           </div>
           <div className="flex gap-8">
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
-            <div>
-              <Image
-                height={500}
-                width={500}
-                className=" object-cover h-full w-full"
-                src={"/images/web.png"}
-              />
-            </div>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
+            <Link href={"/dashboard/assessment"}>
+              <div>
+                <Image
+                  height={500}
+                  width={500}
+                  className=" object-cover h-full w-full"
+                  src={"/images/web.png"}
+                />
+              </div>
+            </Link>
           </div>
         </div>
         <Link href={"/dashboard/personal"}>
