@@ -118,7 +118,7 @@ const Thirdcomp = ({ hidden = false }) => {
             direction="right"
             className="over"
             gradient={true}
-            gradientWidth={50}
+            gradientWidth={20}
             gradientColor="#000000"
           >
             <div className=" flex items-center gap-10 text-[36px] font-space text-[white] leading-none uppercase pr-4 over   ">

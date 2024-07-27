@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       >
         <Sidebar />
       </div>
+
       <div
         className={` 
              w-[80%] pt-6 relative bg-black z-[100000000]`}

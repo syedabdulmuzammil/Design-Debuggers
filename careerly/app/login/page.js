@@ -2,22 +2,55 @@
 import Padding from "@/components/padding";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Page = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const loginButtonRef = useRef(null);
   const router = useRouter();
 
   const handleSubmit = () => {
-    if (username == "syed@gmail.com" && password == "muzammil") {
+    if (username == "a@gmail.com" && password == "1234") {
       router.push("/dashboard");
     } else {
       alert("incorrect details");
+      setUsername("");
+      setPassword("");
     }
   };
+
+  useEffect(() => {
+    const emailInput = emailRef.current;
+    const passwordInput = passwordRef.current;
+    const loginButton = loginButtonRef.current;
+
+    const handleEmailKeyPress = (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        passwordInput.focus();
+      }
+    };
+
+    const handlePasswordKeyPress = (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        loginButton.click();
+      }
+    };
+
+    emailInput.addEventListener("keypress", handleEmailKeyPress);
+    passwordInput.addEventListener("keypress", handlePasswordKeyPress);
+
+    return () => {
+      emailInput.removeEventListener("keypress", handleEmailKeyPress);
+      passwordInput.removeEventListener("keypress", handlePasswordKeyPress);
+    };
+  }, []);
 
   useEffect(() => {
     console.log(message, "mes");
@@ -35,7 +68,8 @@ const Page = () => {
               Email
             </div>
             <input
-              type="text"
+              type="email"
+              ref={emailRef}
               className=" login  bg-[#191919]  w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal text-[#c5c5c5]  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
               placeholder="Enter your Email"
               value={username}
@@ -48,7 +82,8 @@ const Page = () => {
               Password{" "}
             </div>
             <input
-              type="text"
+              type="password"
+              ref={passwordRef}
               className=" login  bg-[#191919] w-[22.5rem] h-[3.5rem] px-3 py-3 rounded-xl font-normal text-[#c5c5c5]  mt-2 md:py-2.5 border-[#444444] border-[1px] outline-none  "
               placeholder="Enter your password"
               value={password}
@@ -58,6 +93,7 @@ const Page = () => {
           <div className="flex justify-center">
             <button
               type="submit"
+              ref={loginButtonRef}
               className=" w-[23rem] font-space bg-[#6E40FF]  text-[#ffffff] text-[14px] font-medium text-center py-4 md:py-3 mt-8 rounded-full "
               onClick={handleSubmit}
             >
